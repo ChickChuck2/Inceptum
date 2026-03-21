@@ -172,9 +172,9 @@ const LandingPage: React.FC = () => {
   ];
 
   const eras = [
-    { num: '01', name: t('landing.progression.eras.stone'), tools: t('content.eras.stone', { returnObjects: true }) as string[], color: '#8C5C3B', icon: '🪨' },
-    { num: '02', name: t('landing.progression.eras.iron'), tools: t('content.eras.iron', { returnObjects: true }) as string[], color: '#8FBED6', icon: '⚙️' },
-    { num: '03', name: t('landing.progression.eras.tech'), tools: t('content.eras.tech', { returnObjects: true }) as string[], color: '#E5C77A', icon: '🔬' },
+    { num: '01', name: t('landing.progression.eras.stone'), tools: t('landing.content.eras.stone', { returnObjects: true }) as string[], color: '#8C5C3B', icon: '🪨' },
+    { num: '02', name: t('landing.progression.eras.iron'), tools: t('landing.content.eras.iron', { returnObjects: true }) as string[], color: '#8FBED6', icon: '⚙️' },
+    { num: '03', name: t('landing.progression.eras.tech'), tools: t('landing.content.eras.tech', { returnObjects: true }) as string[], color: '#E5C77A', icon: '🔬' },
   ];
 
   const devProgress = [
@@ -318,7 +318,7 @@ const LandingPage: React.FC = () => {
                 <span className="hud-bar-item">🍖 82%</span>
                 <span className="hud-bar-item">⚡ 71%</span>
               </div>
-              <img src="/assets/gameplay_forest.png" alt="Gameplay" className="mockup-img" />
+              <img src="assets/gameplay_forest.png" alt="Gameplay" className="mockup-img" />
               <div className="mockup-overlay">
                 <div className="mockup-item-slot active">🪓</div>
                 <div className="mockup-item-slot">⛏</div>
@@ -600,7 +600,7 @@ const LandingPage: React.FC = () => {
           >
             <span className="devprogress-milestones-label">{t('landing.devboard.milestones')}</span>
             <div className="devprogress-milestone-chips">
-              {Object.values(t('content.milestones_list', { returnObjects: true }) as Record<string, string>).map(m => (
+              {Object.values(t('landing.content.milestones_list', { returnObjects: true }) as Record<string, string>).map(m => (
                 <span key={m} className="devprogress-milestone-chip">{m}</span>
               ))}
             </div>

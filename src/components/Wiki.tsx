@@ -86,9 +86,9 @@ const Wiki: React.FC = () => {
                   </div>
                 ) : (
                   <div className="icon-box">
-                    {item.type === 'Food' && <img src="/assets/heart.png" alt="Life" width="24" />}
+                    {item.type === 'Food' && <img src="assets/heart.png" alt="Life" width="24" />}
                     {item.type === 'Tool' && <Hammer size={24} color="#C96B2C" />}
-                    {item.type === 'Resource' && <img src="/assets/backpack.png" alt="Resource" width="24" />}
+                    {item.type === 'Tool' && <img src="assets/backpack.png" alt="Resource" width="24" />}
                     {item.type === 'Machine' && <Settings size={24} color="#00d2ff" />}
                   </div>
                 )}
