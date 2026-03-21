@@ -107,10 +107,10 @@ const LandingPage: React.FC = () => {
   ];
 
   const animals = [
-    { emoji: '🐔', name: t('landing.fauna.animals.chicken.name'), behavior: t('landing.fauna.animals.chicken.behavior'), drops: [t('content.drops.egg'), t('content.drops.feather'), t('content.drops.raw_meat')], color: '#E5C77A' },
-    { emoji: '🐷', name: t('landing.fauna.animals.pig.name'), behavior: t('landing.fauna.animals.pig.behavior'), drops: [t('content.drops.bacon'), t('content.drops.leather'), t('content.drops.fat')], color: '#C96B2C' },
-    { emoji: '🐺', name: t('landing.fauna.animals.wolf.name'), behavior: t('landing.fauna.animals.wolf.behavior'), drops: [t('content.drops.raw_meat'), t('content.drops.bone'), t('content.drops.leather')], color: '#8FBED6' },
-    { emoji: '🐄', name: t('landing.fauna.animals.cow.name'), behavior: t('landing.fauna.animals.cow.behavior'), drops: [t('content.drops.beef'), t('content.drops.leather'), t('content.drops.animal_fat')], color: '#6C8037' },
+    { emoji: '🐔', name: t('landing.fauna.animals.chicken.name'), behavior: t('landing.fauna.animals.chicken.behavior'), drops: [t('landing.content.drops.egg'), t('landing.content.drops.feather'), t('landing.content.drops.raw_meat')], color: '#E5C77A' },
+    { emoji: '🐷', name: t('landing.fauna.animals.pig.name'), behavior: t('landing.fauna.animals.pig.behavior'), drops: [t('landing.content.drops.bacon'), t('landing.content.drops.leather'), t('landing.content.drops.fat')], color: '#C96B2C' },
+    { emoji: '🐺', name: t('landing.fauna.animals.wolf.name'), behavior: t('landing.fauna.animals.wolf.behavior'), drops: [t('landing.content.drops.raw_meat'), t('landing.content.drops.bone'), t('landing.content.drops.leather')], color: '#8FBED6' },
+    { emoji: '🐄', name: t('landing.fauna.animals.cow.name'), behavior: t('landing.fauna.animals.cow.behavior'), drops: [t('landing.content.drops.beef'), t('landing.content.drops.leather'), t('landing.content.drops.animal_fat')], color: '#6C8037' },
   ];
 
   const futureSystems = [
@@ -118,57 +118,57 @@ const LandingPage: React.FC = () => {
       icon: <Sword size={26} />,
       title: t('landing.future.systems.bosses.title'),
       desc: t('landing.future.systems.bosses.desc'),
-      tag: t('content.phases.p2'),
+      tag: t('landing.content.phases.p2'),
       color: '#ff4444',
     },
     {
       icon: <Bug size={26} />,
       title: t('landing.future.systems.ai.title'),
       desc: t('landing.future.systems.ai.desc'),
-      tag: t('content.phases.p2'),
+      tag: t('landing.content.phases.p2'),
       color: '#8FBED6',
     },
     {
       icon: <Dna size={26} />,
       title: t('landing.future.systems.genetics.title'),
       desc: t('landing.future.systems.genetics.desc'),
-      tag: t('content.phases.p2'),
+      tag: t('landing.content.phases.p2'),
       color: '#00ff88',
     },
     {
       icon: <ShoppingCart size={26} />,
       title: t('landing.future.systems.economy.title'),
       desc: t('landing.future.systems.economy.desc'),
-      tag: t('content.phases.p3'),
+      tag: t('landing.content.phases.p3'),
       color: '#E5C77A',
     },
     {
       icon: <Wrench size={26} />,
       title: t('landing.future.systems.repair.title'),
       desc: t('landing.future.systems.repair.desc'),
-      tag: t('content.phases.done'),
+      tag: t('landing.content.phases.done'),
       color: '#00ff88',
     },
     {
       icon: <Cpu size={26} />,
       title: t('landing.future.systems.advanced.title'),
       desc: t('landing.future.systems.advanced.desc'),
-      tag: t('content.phases.p3'),
+      tag: t('landing.content.phases.p3'),
       color: '#ff6a00',
     },
   ];
 
   const futureCrops = [
-    t('content.crops.grape'), t('content.crops.bean'), t('content.crops.pumpkin'), 
-    t('content.crops.carrot'), t('content.crops.potato'), t('content.crops.coffee'), 
-    t('content.crops.kiwi'), t('content.crops.strawberry'), t('content.crops.avocado'), 
-    t('content.crops.corn'), t('content.crops.barley')
+    t('landing.content.crops.grape'), t('landing.content.crops.bean'), t('landing.content.crops.pumpkin'), 
+    t('landing.content.crops.carrot'), t('landing.content.crops.potato'), t('landing.content.crops.coffee'), 
+    t('landing.content.crops.kiwi'), t('landing.content.crops.strawberry'), t('landing.content.crops.avocado'), 
+    t('landing.content.crops.corn'), t('landing.content.crops.barley')
   ];
   const futureAnimalsList = [
-    `🐰 ${t('content.animals.rabbit')}`, 
-    `🐦 ${t('content.animals.bird')}`, 
-    `🐝 ${t('content.animals.bee')}`, 
-    `🐑 ${t('content.animals.sheep')}`
+    `🐰 ${t('landing.content.animals.rabbit')}`, 
+    `🐦 ${t('landing.content.animals.bird')}`, 
+    `🐝 ${t('landing.content.animals.bee')}`, 
+    `🐑 ${t('landing.content.animals.sheep')}`
   ];
 
   const eras = [
@@ -434,7 +434,7 @@ const LandingPage: React.FC = () => {
             <div className="farming-planned">
               <span className="farming-current-label">{t('landing.agriculture.planned')}</span>
               <div className="farming-chips">
-                {futureCrops.filter(c => c !== t('content.crops.grape')).map(crop => (
+                {futureCrops.filter(c => c !== t('landing.content.crops.grape')).map(crop => (
                   <span key={crop} className="farming-chip planned">{crop}</span>
                 ))}
               </div>
