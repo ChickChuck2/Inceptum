@@ -9,6 +9,48 @@
         {
           "type": "feature",
           "text": "Novo Menu Principal."
+        },
+        {
+          "type": "bug",
+          "text": "Corrigido erro no UI Builder."
+        },
+        {
+          "type": "bug",
+          "text": "Corrigido a sobreposição entre os painéis."
+        }
+      ]
+    },
+    {
+      "date": "20 MAR",
+      "version": "V0.1.1",
+      "title": "MENU DE PAUSA",
+      "notes": [
+        {
+          "type": "feature",
+          "text": "Novo menu de pausa com dados de XP e Conexão."
+        },
+        {
+          "type": "bug",
+          "text": "Ajustado a sincronização de XP no Multiplayer."
+        }
+      ]
+    },
+    {
+      "date": "15 MAR",
+      "version": "V0.1.0",
+      "title": "SISTEMAS E MÁQUINAS",
+      "notes": [
+        {
+          "type": "feature",
+          "text": "Adicionado suporte para novas máquinas (Carpintaria, Forja e Fermentação)."
+        },
+        {
+          "type": "imp",
+          "text": "Melhorado o sistema de Crafting e Inventário."
+        },
+        {
+          "type": "bug",
+          "text": "Corrigido a visibilidade do mapa."
         }
       ]
     }
