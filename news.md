@@ -6,7 +6,7 @@ B:\UnityProjets\SurvivorIO
 
 ?? ONDE VER A VERSÃO? 
 ProjectSettings.asset
-
+!Se voce errou a versão, não se preocupe, apenas corrija o news.json e continue.
 !!! LEMBRE-SE DE NUNCA ALTERAR MINHA VERSÃO, ISSO APENAS EU POSSO FAZER.
 
 

@@ -8,6 +8,26 @@
       "notes": [
         {
           "type": "feature",
+          "text": "Fornalha agora possui inventário próprio (Container Independente)."
+        },
+        {
+          "type": "bug",
+          "text": "Corrigido desaparecimento de itens na Carpintaria (Modelo Seletor)."
+        },
+        {
+          "type": "bug",
+          "text": "Forja agora entrega itens corretamente para Clientes no Multiplayer."
+        },
+        {
+          "type": "imp",
+          "text": "Melhoria na trava de movimento e detecção de proximidade das máquinas."
+        },
+        {
+          "type": "feature",
+          "text": "Atalho ESC agora fecha interfaces de máquinas de forma confiável."
+        },
+        {
+          "type": "feature",
           "text": "Personalize suas teclas de movimento, ação e menus!"
         },
         {
