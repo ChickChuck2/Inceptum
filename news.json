@@ -12,15 +12,23 @@
         },
         {
           "type": "feature",
-          "text": "Novo Menu Principal."
+          "text": "Novo Menu Principal e Sidebar Vanguard Edition."
+        },
+        {
+          "type": "feature",
+          "text": "Novo Sistema de Configurações independente (Vídeo, Áudio, Controles)."
+        },
+        {
+          "type": "feature",
+          "text": "UID copiável com um clique no Menu Principal."
+        },
+        {
+          "type": "imp",
+          "text": "Mural de Notícias mais compacto e legível."
         },
         {
           "type": "bug",
-          "text": "Corrigido erro no UI Builder."
-        },
-        {
-          "type": "bug",
-          "text": "Corrigido a sobreposição entre os painéis."
+          "text": "Corrigido a sobreposição e conflitos de layout entre painéis."
         }
       ]
     },
