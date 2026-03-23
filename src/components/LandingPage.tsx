@@ -193,7 +193,7 @@ const LandingPage: React.FC = () => {
   const [news, setNews] = useState<any>(null);
 
   useEffect(() => {
-    fetch('/news.json')
+    fetch('./news.json')
       .then(res => res.json())
       .then(data => setNews(data))
       .catch(err => console.error("Error loading news:", err));
