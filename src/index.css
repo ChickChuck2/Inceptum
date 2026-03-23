@@ -774,3 +774,101 @@ body {
   color: #ff6a00;
   text-transform: uppercase;
 }
+
+/* ============================================================
+   DYNAMIC NEWS (CHANGELOG)
+   ============================================================ */
+.news-section-web {
+  padding: 6rem 5%;
+  background: #050507;
+  border-top: 1px solid rgba(255,255,255,0.03);
+}
+
+.news-web-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.news-web-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.news-web-card {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 2.5rem;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.news-web-card:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.news-web-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.news-web-version {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--amarelo-suave);
+  letter-spacing: 2px;
+}
+
+.news-web-date {
+  font-size: 0.8rem;
+  color: #444;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.news-web-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ccc;
+}
+
+.news-web-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.news-web-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.news-web-tag {
+  font-size: 0.65rem;
+  font-weight: 900;
+  padding: 4px 10px;
+  min-width: 60px;
+  text-align: center;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+}
+
+.news-web-tag.bug { color: var(--laranja-queimado); background: rgba(201, 107, 44, 0.1); }
+.news-web-tag.feature { color: var(--azul-ceu); background: rgba(143, 190, 214, 0.1); }
+.news-web-tag.imp { color: var(--amarelo-suave); background: rgba(229, 199, 122, 0.1); }
+
+.news-web-note p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #888;
+  line-height: 1.6;
+}

@@ -159,15 +159,15 @@ const LandingPage: React.FC = () => {
   ];
 
   const futureCrops = [
-    t('landing.content.crops.grape'), t('landing.content.crops.bean'), t('landing.content.crops.pumpkin'), 
-    t('landing.content.crops.carrot'), t('landing.content.crops.potato'), t('landing.content.crops.coffee'), 
-    t('landing.content.crops.kiwi'), t('landing.content.crops.strawberry'), t('landing.content.crops.avocado'), 
+    t('landing.content.crops.grape'), t('landing.content.crops.bean'), t('landing.content.crops.pumpkin'),
+    t('landing.content.crops.carrot'), t('landing.content.crops.potato'), t('landing.content.crops.coffee'),
+    t('landing.content.crops.kiwi'), t('landing.content.crops.strawberry'), t('landing.content.crops.avocado'),
     t('landing.content.crops.corn'), t('landing.content.crops.barley')
   ];
   const futureAnimalsList = [
-    `🐰 ${t('landing.content.animals.rabbit')}`, 
-    `🐦 ${t('landing.content.animals.bird')}`, 
-    `🐝 ${t('landing.content.animals.bee')}`, 
+    `🐰 ${t('landing.content.animals.rabbit')}`,
+    `🐦 ${t('landing.content.animals.bird')}`,
+    `🐝 ${t('landing.content.animals.bee')}`,
     `🐑 ${t('landing.content.animals.sheep')}`
   ];
 
@@ -189,6 +189,15 @@ const LandingPage: React.FC = () => {
     { icon: '🌽', name: t('landing.devboard.categories.farming'), done: 2, total: 13, pct: 15, color: '#6C8037', next: t('landing.devboard.next_milestones.farming') },
     { icon: '💀', name: t('landing.devboard.categories.enemies'), done: 0, total: 2, pct: 0, color: '#ff4444', next: t('landing.devboard.next_milestones.enemies') },
   ];
+
+  const [news, setNews] = useState<any>(null);
+
+  useEffect(() => {
+    fetch('/news.json')
+      .then(res => res.json())
+      .then(data => setNews(data))
+      .catch(err => console.error("Error loading news:", err));
+  }, []);
 
   return (
     <div className="landing-v2">
@@ -605,6 +614,47 @@ const LandingPage: React.FC = () => {
               ))}
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* ===================== DYANMIC NEWS (CHANGELOG) ===================== */}
+      <section className="news-section-web">
+        <div className="news-web-inner">
+          <motion.div className="section-eyebrow center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+            {t('landing.news.eyebrow', 'CHANGELOG')}
+          </motion.div>
+          <motion.h2 className="section-title-large center" initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            {t('landing.news.title', 'Últimas Atualizações')}
+          </motion.h2>
+
+          <div className="news-web-grid">
+            {news?.updates?.map((update: any, idx: number) => (
+              <motion.div
+                key={update.version}
+                className="news-web-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <div className="news-web-header">
+                  <span className="news-web-version">{update.version}</span>
+                  <span className="news-web-date">{update.date}</span>
+                </div>
+                <h3 className="news-web-title">{update.title}</h3>
+                <div className="news-web-notes">
+                  {update.notes.map((note: any, i: number) => (
+                    <div key={i} className="news-web-note">
+                      <span className={`news-web-tag ${note.type}`}>
+                        {note.type === 'bug' ? 'BUG' : note.type === 'feature' ? 'NEW' : 'IMP'}
+                      </span>
+                      <p>{note.text}</p>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
