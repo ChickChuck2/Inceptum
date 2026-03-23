@@ -3,6 +3,29 @@
   "updates": [
     {
       "date": "23 MAR",
+      "version": "V0.1.3",
+      "title": "SISTEMA DE CONTROLES",
+      "notes": [
+        {
+          "type": "feature",
+          "text": "Personalize suas teclas de movimento, ação e menus!"
+        },
+        {
+          "type": "feature",
+          "text": "Nova aba de Controles Vanguard com reatribuição dinâmica."
+        },
+        {
+          "type": "feature",
+          "text": "Teclas de Fabricação, Minimapa e Skill Menu agora configuráveis."
+        },
+        {
+          "type": "bug",
+          "text": "Corrigido erro que retornava ao menu principal durante o gameplay."
+        }
+      ]
+    },
+    {
+      "date": "23 MAR",
       "version": "V0.1.2",
       "title": "ATUALIZAÇÃO DE INTERFACE",
       "notes": [
@@ -29,6 +52,18 @@
         {
           "type": "bug",
           "text": "Corrigido a sobreposição e conflitos de layout entre painéis."
+        },
+        {
+          "type": "feature",
+          "text": "Novo Sistema de Controles totalmente personalizável!"
+        },
+        {
+          "type": "feature",
+          "text": "Configurações dinâmicas para Minimapa, Fabricação e Skills."
+        },
+        {
+          "type": "bug",
+          "text": "Melhoria radical na estabilidade do menu de pausa."
         }
       ]
     },
