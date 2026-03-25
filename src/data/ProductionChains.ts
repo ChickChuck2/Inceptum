@@ -65,3 +65,40 @@ export const BREAD_CHAIN: ChainStep[] = [
     output: { id: 'bread', nameKey: 'landing.wiki.items.bread.name', quantity: 1 }
   }
 ];
+
+export const WOOD_CHAIN: ChainStep[] = [
+  {
+    id: 'forestry',
+    labelKey: 'landing.production.steps.forestry_label',
+    machineKey: 'landing.production.machines.manual',
+    inputs: [{ id: 'axe', nameKey: 'landing.wiki.items.axe.name', quantity: 1 }],
+    output: { id: 'wood', nameKey: 'landing.wiki.items.wood.name', quantity: 5 }
+  },
+  {
+    id: 'wood_milling',
+    labelKey: 'landing.production.steps.milling_label',
+    machineKey: 'landing.wiki.items.carpenter_bench.name',
+    inputs: [{ id: 'wood', nameKey: 'landing.wiki.items.wood.name', quantity: 1 }],
+    output: { id: 'planks', nameKey: 'landing.wiki.items.planks.name', quantity: 2 }
+  }
+];
+
+export const IRON_CHAIN: ChainStep[] = [
+  {
+    id: 'mining',
+    labelKey: 'landing.production.steps.extraction_label',
+    machineKey: 'landing.production.machines.manual',
+    inputs: [{ id: 'pickaxe', nameKey: 'landing.wiki.items.pickaxe.name', quantity: 1 }],
+    output: { id: 'iron_ore', nameKey: 'landing.wiki.items.iron_ore.name', quantity: 1 }
+  },
+  {
+    id: 'smelting',
+    labelKey: 'landing.production.steps.thermal_label',
+    machineKey: 'landing.wiki.items.forge.name',
+    inputs: [
+      { id: 'iron_ore', nameKey: 'landing.wiki.items.iron_ore.name', quantity: 2 },
+      { id: 'coal', nameKey: 'landing.wiki.items.coal.name', quantity: 1 }
+    ],
+    output: { id: 'iron_ingot', nameKey: 'landing.wiki.items.iron_ingot.name', quantity: 1 }
+  }
+];

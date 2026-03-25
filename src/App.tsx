@@ -67,7 +67,7 @@ const App: React.FC = () => {
           <div className="footer-status-group">
             <div className="footer-status-item">
               <span className="label">VERSÃO</span>
-              <span className="value">ALPHA_0.1.2</span>
+              <span className="value">0.1</span>
             </div>
             <div className="footer-status-item">
               <span className="label">SISTEMAS</span>
