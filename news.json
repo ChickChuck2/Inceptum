@@ -1,10 +1,45 @@
 {
-  "last_check": "2026-03-23",
+  "last_check": "2026-03-25",
   "updates": [
     {
+      "date": "25 MAR",
+      "version": "APLHA 0.1",
+      "title": "ESTABILIZAÇÃO E PERSISTÊNCIA",
+      "notes": [
+        {
+          "type": "bug",
+          "text": "Sincronização de Seed: O mundo agora é persistente e não muda ao recarregar."
+        },
+        {
+          "type": "bug",
+          "text": "Resolvido NullReferenceException no carregamento de Bandeiras Coloridas."
+        },
+        {
+          "type": "feature",
+          "text": "Adicionado suporte para salvamento e carregamento da Forja (Forja)."
+        },
+        {
+          "type": "bug",
+          "text": "Corrigido registro da Mesa de Carpintaria no sistema de salvamento."
+        },
+        {
+          "type": "imp",
+          "text": "Restauração completa do combate e interações em modo Singleplayer (SP)."
+        },
+        {
+          "type": "bug",
+          "text": "Corrigida detecção de colisão para árvores frutíferas e grama no SP."
+        },
+        {
+          "type": "imp",
+          "text": "Otimização de Netcode: Removidos diversos avisos de NetworkVariable no console."
+        }
+      ]
+    },
+    {
       "date": "23 MAR",
-      "version": "V0.1.3",
-      "title": "SISTEMA DE CONTROLES",
+      "version": "APLHA 0.1",
+      "title": "SISTEMA DE CONTROLES & INTERFACE",
       "notes": [
         {
           "type": "feature",
@@ -41,17 +76,6 @@
         {
           "type": "bug",
           "text": "Corrigido erro que retornava ao menu principal durante o gameplay."
-        }
-      ]
-    },
-    {
-      "date": "23 MAR",
-      "version": "V0.1.2",
-      "title": "ATUALIZAÇÃO DE INTERFACE",
-      "notes": [
-        {
-          "type": "feature",
-          "text": "Diga oi a nossa Nota de versão 💘"
         },
         {
           "type": "feature",
@@ -74,14 +98,6 @@
           "text": "Corrigido a sobreposição e conflitos de layout entre painéis."
         },
         {
-          "type": "feature",
-          "text": "Novo Sistema de Controles totalmente personalizável!"
-        },
-        {
-          "type": "feature",
-          "text": "Configurações dinâmicas para Minimapa, Fabricação e Skills."
-        },
-        {
           "type": "bug",
           "text": "Melhoria radical na estabilidade do menu de pausa."
         }
@@ -89,7 +105,7 @@
     },
     {
       "date": "20 MAR",
-      "version": "V0.1.1",
+      "version": "APLHA 0.1",
       "title": "MENU DE PAUSA",
       "notes": [
         {
@@ -104,7 +120,7 @@
     },
     {
       "date": "15 MAR",
-      "version": "V0.1.0",
+      "version": "APLHA 0.1",
       "title": "SISTEMAS E MÁQUINAS",
       "notes": [
         {
