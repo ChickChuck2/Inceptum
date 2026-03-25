@@ -54,7 +54,7 @@ const resources = {
         "gastric": "Resistência Gástrica+: Absorção de nutrientes"
       },
       "roadmap_title": "Mapa de Desenvolvimento",
-      "roadmap_status": "Status: Alpha 0.1 - Ativo",
+      "roadmap_status": "Status: APLHA 0.1 - Ativo",
       "roadmap_q1": "Fase 1: Fundação",
       "roadmap_q1_desc": "Inventário sistêmico, crafting base, mundo procedural e arquitetura coop.",
       "roadmap_q2": "Fase 2: Expansão",
@@ -70,7 +70,7 @@ const resources = {
       "community_cta": "TORNAR-SE TESTER",
       "landing": {
         "hero": {
-          "badge": "ALPHA 0.1 — TESTES FECHADOS",
+          "badge": "APLHA 0.1 — TESTES FECHADOS",
           "title_1": "SOBREVIVA",
           "title_2": "AO COLAPSO",
           "scroll": "SCROLL"
@@ -154,7 +154,7 @@ const resources = {
           "title": "Construído feature a feature",
           "body": "Transparência total. Cada categoria reflete o estado real do jogo — sem marketing, sem promessas vazias.",
           "overall": "PROGRESSO GERAL",
-          "overall_desc": "~65% — Alpha 0.1",
+          "overall_desc": "~65% — APLHA 0.1",
           "done": "features concluídas",
           "milestones": "PRÓXIMOS MILESTONES",
           "categories": {
@@ -227,7 +227,7 @@ const resources = {
             "iron_ore": { "name": "Minério de Ferro", "desc": "Minério bruto extraído de depósitos rochosos." },
             "iron_ingot": { "name": "Lingote de Ferro", "desc": "Metal refinado para construção e ferramentas avançadas." },
             "planks": { "name": "Tábuas de Madeira", "desc": "Madeira processada na mesa de carpinteiro." },
-            "carpenter_bench": { "name": "Mesa de Carpinteiro", "desc": "Processa troncos brutos em tábuas e hastes." },
+            "carpenter_bench": { "name": "Mesa de Carpintaria", "desc": "Processa troncos brutos em tábuas e hastes." },
             "grinder": { "name": "Moedor", "desc": "Utilizado para moer grãos e minérios macios." },
             "wheat": { "name": "Trigo", "desc": "Grão básico para produção de farinha." },
             "wheat_seed": { "name": "Semente de Trigo", "desc": "Semente para plantio de trigo." },
@@ -283,7 +283,7 @@ const resources = {
           "read_more": "Ler Artigo",
           "copyright": "2026 Inceptum Project. Desenvolvido para exploração técnica máxima.",
           "footer": {
-            "version": "VERSÃO 0.1",
+            "version": "VERSÃO APLHA 0.1",
             "systems": "SISTEMAS OPERACIONAIS"
           }
         },
@@ -375,7 +375,7 @@ const resources = {
         "gastric": "Gastric Resistance+: Nutrient absorption efficiency"
       },
       "roadmap_title": "Project Roadmap",
-      "roadmap_status": "Status: Alpha 0.1 - Active",
+      "roadmap_status": "Status: APLHA 0.1 - Active",
       "roadmap_q1": "Phase 1: Foundation",
       "roadmap_q1_desc": "Systemic inventory, base crafting, procedural world, and coop architecture.",
       "roadmap_q2": "Phase 2: Expansion",
@@ -391,7 +391,7 @@ const resources = {
       "community_cta": "BECOME A TESTER",
       "landing": {
         "hero": {
-          "badge": "ALPHA 0.1 — CLOSED TESTING",
+          "badge": "APLHA 0.1 — CLOSED TESTING",
           "title_1": "SURVIVE",
           "title_2": "THE COLLAPSE",
           "scroll": "SCROLL"
@@ -475,7 +475,7 @@ const resources = {
           "title": "Built Feature by Feature",
           "body": "Total transparency. Every category reflects the real state of the game — no marketing, no empty promises.",
           "overall": "OVERALL PROGRESS",
-          "overall_desc": "~65% — Alpha 0.1",
+          "overall_desc": "~65% — APLHA 0.1",
           "done": "features completed",
           "milestones": "UPCOMING MILESTONES",
           "categories": {
@@ -604,7 +604,7 @@ const resources = {
           "read_more": "Read Article",
           "copyright": "2026 Inceptum Project. Developed for maximum technical exploration.",
           "footer": {
-            "version": "VERSION 0.1",
+            "version": "VERSION APLHA 0.1",
             "systems": "OPERATING SYSTEMS"
           }
         },

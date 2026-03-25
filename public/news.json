@@ -3,7 +3,7 @@
   "updates": [
     {
       "date": "25 MAR",
-      "version": "0.1",
+      "version": "APLHA 0.1",
       "title": "ESTABILIZAÇÃO E PERSISTÊNCIA",
       "notes": [
         {
@@ -28,7 +28,15 @@
         },
         {
           "type": "bug",
-          "text": "Corrigida detecção de colisão para árvores frutíferas e grama no SP."
+          "text": "Estabilização do Building System: O mouse agora detecta corretamente itens e slots, prevenindo construções acidentais."
+        },
+        {
+          "type": "imp",
+          "text": "Supressão Dinâmica de Build: O preview agora se oculta automaticamente ao sobrepor a Hotbar ou Itens, reativando ao sair."
+        },
+        {
+          "type": "bug",
+          "text": "Resolvido vazamento de estado no Moedor que podia bloquear permanentemente o sistema de construção."
         },
         {
           "type": "imp",
@@ -38,7 +46,7 @@
     },
     {
       "date": "23 MAR",
-      "version": "0.1",
+      "version": "APLHA 0.1",
       "title": "SISTEMA DE CONTROLES & INTERFACE",
       "notes": [
         {
@@ -105,7 +113,7 @@
     },
     {
       "date": "20 MAR",
-      "version": "0.1",
+      "version": "APLHA 0.1",
       "title": "MENU DE PAUSA",
       "notes": [
         {
@@ -120,7 +128,7 @@
     },
     {
       "date": "15 MAR",
-      "version": "0.1",
+      "version": "APLHA 0.1",
       "title": "SISTEMAS E MÁQUINAS",
       "notes": [
         {
