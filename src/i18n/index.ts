@@ -8,6 +8,8 @@ const resources = {
       "nav_features": "Gameplay",
       "nav_portal": "Alpha Showcase",
       "nav_discord": "Comunidade",
+      "tech_portal_title": "ALPHA SHOWCASE",
+      "tech_portal_desc": "Exploração técnica dos sistemas que compõem o Inceptum.",
       "lore_title": "O GRANDE RESET: 2025",
       "lore_text": "Tudo começou em 2025. Uma luz verde cobriu a Terra e a humanidade foi petrificada. Milhares de anos se passaram. Apenas aqueles que mantiveram o pensamento ativo, contando cada segundo, conseguiram romper a pedra. O mundo agora é um ecossistema indomável onde a tecnologia de ponta foi enterrada pelo tempo.",
       "lore_reset_call": "Despetrifique sua mente. Recomece do zero.",
@@ -200,7 +202,47 @@ const resources = {
           "desc": "Acesse informações e receitas sincronizadas diretamente do motor do Inceptum.",
           "search_placeholder": "Pesquisar itens...",
           "all": "TODOS",
-          "components_label": "COMPONENTES NECESSÁRIOS"
+          "components_label": "COMPONENTES NECESSÁRIOS",
+          "items": {
+            "apple": { "name": "Maçã", "desc": "Uma linda maçã. Pode ser consumida ou usada para atrair animais." },
+            "plum": { "name": "Ameixa", "desc": "Ameixa silvestre colhida de árvores frutíferas no bioma de floresta." },
+            "grapes": { "name": "Cacho de Uva", "desc": "Uvas frescas e suculentas, perfeitas para um lanche rápido." },
+            "bread": { "name": "Pão Francês", "desc": "Assado artesanalmente em fornos de pedra." },
+            "raw_bacon": { "name": "Bacon Cru", "desc": "Pedaço de toucinho de porco. Recomenda-se cozinhar." },
+            "orange": { "name": "Laranja", "desc": "Isso daria um suco de laranja bem relaxante..." },
+            "coconut_dry": { "name": "Coco Seco", "desc": "Uma casca dura que guarda um sabor rico e versátil, ideal para receitas tropicais." },
+            "coconut_green": { "name": "Coco Verde", "desc": "Uma cápsula natural de refrescância, cheia de água doce e nutrientes." },
+            "coconut_pulp": { "name": "Polpa de Coco", "desc": "A parte mais doce e cremosa do coco, perfeita para sobremesas ou lanches saudáveis." },
+            "coconut_bowl": { "name": "Tigela de Coco", "desc": "Uma tigela artesanal feita de casca de coco, ideal para servir sopas ou armazenar pequenos itens." },
+            "clay_jar": { "name": "Pote de Barro", "desc": "Um pote feito de barro, ideal para armazenar líquidos." },
+            "minced_meat": { "name": "Carne Moída", "desc": "Carne fresca moída, pronta para ser preparada." },
+            "wheat_flour": { "name": "Farinha de Trigo", "desc": "Trigo processado, ingrediente base para pães." },
+            "yeast": { "name": "Fermento", "desc": "Essencial para fazer a massa do pão crescer." },
+            "wooden_rod": { "name": "Haste de Madeira", "desc": "Um haste de madeira para criação de ferramentas avançadas." },
+            "stone_sword": { "name": "Espada de Pedra", "desc": "Uma espada básica primitiva para defesa e caça." },
+            "fishing_rod": { "name": "Vara de Pesca", "desc": "Uma vara de pesca básica primitiva para coletar alimento nos rios e mar." },
+            "forge": { "name": "Forja", "desc": "Equipamento de alta temperatura para fundição de metais e criação de itens avançados." },
+            "axe": { "name": "Machado", "desc": "Ferramenta de corte essencial para extrair madeira." },
+            "pickaxe": { "name": "Picareta", "desc": "Essencial para minerar pedras e minérios brutos." },
+            "iron_ore": { "name": "Minério de Ferro", "desc": "Minério bruto extraído de depósitos rochosos." },
+            "iron_ingot": { "name": "Lingote de Ferro", "desc": "Metal refinado para construção e ferramentas avançadas." },
+            "planks": { "name": "Tábuas de Madeira", "desc": "Madeira processada na mesa de carpinteiro." },
+            "carpenter_bench": { "name": "Mesa de Carpinteiro", "desc": "Processa troncos brutos em tábuas e hastes." },
+            "grinder": { "name": "Moedor", "desc": "Utilizado para moer grãos e minérios macios." },
+            "wheat": { "name": "Trigo", "desc": "Grão básico para produção de farinha." },
+            "wheat_seed": { "name": "Semente de Trigo", "desc": "Semente para plantio de trigo." },
+            "water_bucket": { "name": "Balde com Água", "desc": "Recipiente com água fresca." },
+            "preferment": { "name": "Pré-Fermento", "desc": "Base para ativação da levedura." },
+            "salt": { "name": "Sal Marinho", "desc": "Mineral essencial para realçar sabores e preservar alimentos." },
+            "bread_dough": { "name": "Massa de Pão", "desc": "Massa pronta para ser assada." },
+            "fermentation_table": { "name": "Mesa de Fermentação", "desc": "Equipamento para processar culturas biológicas." },
+            "workbench": { "name": "Bancada de Trabalho", "desc": "Mesa multifuncional para montagem de itens complexos." }
+          },
+          "stats": {
+            "regen": "VITALIDADE",
+            "hunger": "SACIAR",
+            "energy": "ENERGIA"
+          }
         },
         "progression_hub": {
           "title": "Evolução Sistêmica",
@@ -212,6 +254,25 @@ const resources = {
           "limit": "Limite: 4 Jogadores Solo/Coop",
           "manager_title": "Gerenciador Sentinel",
           "manager_desc": "Sincronização persistente de progresso e genética entre sessões."
+        },
+        "production": {
+          "title": "Fluxogramas de Produção",
+          "desc": "Mapeamento técnico de ciclos de transformação de matéria em larga escala.",
+          "technical_cycle": "Engenharia de Alimentos (Ciclo Crítico)",
+          "machines": {
+            "soil": "Solo Fértil",
+            "furnace": "Fornalha",
+            "manual": "Manipulação Manual"
+          },
+          "steps": {
+            "agro_label": "Ciclo Agrícola",
+            "milling_label": "Processamento Industrial",
+            "extraction_label": "Extração Mineral",
+            "activation_label": "Ativação Biológica",
+            "culture_label": "Cultura de Levedura",
+            "synthesis_label": "Sintese de Massa",
+            "thermal_label": "Estágio Térmico Final"
+          }
         },
         "dev_diary": {
           "title": "Dev Diary",
@@ -265,6 +326,8 @@ const resources = {
       "nav_features": "Gameplay",
       "nav_portal": "Alpha Showcase",
       "nav_discord": "Community",
+      "tech_portal_title": "ALPHA SHOWCASE",
+      "tech_portal_desc": "Technical exploration of the systems that make up Inceptum.",
       "lore_title": "THE GREAT RESET: 2025",
       "lore_text": "It all began in 2025. A green light covered the Earth, and humanity was petrified. Thousands of years passed. Only those who kept their minds active, counting every second, broke through the stone. The world is now an untamable ecosystem where cutting-edge technology was buried by time.",
       "lore_reset_call": "Unpetrify your mind. Start from zero.",
@@ -457,7 +520,47 @@ const resources = {
           "desc": "Access information and recipes synced directly from the Inceptum engine.",
           "search_placeholder": "Search items...",
           "all": "ALL",
-          "components_label": "REQUIRED COMPONENTS"
+          "components_label": "REQUIRED COMPONENTS",
+          "items": {
+            "apple": { "name": "Apple", "desc": "A beautiful apple. Can be consumed or used to attract animals." },
+            "plum": { "name": "Plum", "desc": "Wild plum harvested from fruit trees in the forest biome." },
+            "grapes": { "name": "Grapes", "desc": "Fresh and juicy grapes, perfect for a quick snack." },
+            "bread": { "name": "Bread", "desc": "Artisanally baked in stone ovens." },
+            "raw_bacon": { "name": "Raw Bacon", "desc": "Piece of pork fat. Cooking is recommended." },
+            "orange": { "name": "Orange", "desc": "This would make a very relaxing orange juice..." },
+            "coconut_dry": { "name": "Dry Coconut", "desc": "A hard shell that holds a rich and versatile flavor, ideal for tropical recipes." },
+            "coconut_green": { "name": "Green Coconut", "desc": "A natural capsule of refreshment, full of sweet water and nutrients." },
+            "coconut_pulp": { "name": "Coconut Pulp", "desc": "The sweetest and creamiest part of the coconut, perfect for desserts or healthy snacks." },
+            "coconut_bowl": { "name": "Coconut Bowl", "desc": "A handcrafted bowl made from coconut shell, ideal for serving soups or storing small items." },
+            "clay_jar": { "name": "Clay Jar", "desc": "A jar made of clay, ideal for storing liquids." },
+            "minced_meat": { "name": "Minced Meat", "desc": "Freshly ground meat, ready to be prepared." },
+            "wheat_flour": { "name": "Wheat Flour", "desc": "Processed wheat, base ingredient for breads." },
+            "yeast": { "name": "Yeast", "desc": "Essential for making bread dough rise." },
+            "wooden_rod": { "name": "Wooden Rod", "desc": "A wooden rod for crafting advanced tools." },
+            "stone_sword": { "name": "Stone Sword", "desc": "A basic primitive sword for defense and hunting." },
+            "fishing_rod": { "name": "Fishing Rod", "desc": "A basic primitive fishing rod for gathering food from rivers and the sea." },
+            "forge": { "name": "Forge", "desc": "High-temperature equipment for smelting metals and creating advanced items." },
+            "axe": { "name": "Axe", "desc": "Essential cutting tool for extracting wood." },
+            "pickaxe": { "name": "Pickaxe", "desc": "Essential for mining stones and raw ores." },
+            "iron_ore": { "name": "Iron Ore", "desc": "Raw ore extracted from rocky deposits." },
+            "iron_ingot": { "name": "Iron Ingot", "desc": "Refined metal for construction and advanced tools." },
+            "planks": { "name": "Wood Planks", "desc": "Wood processed at the carpenter's bench." },
+            "carpenter_bench": { "name": "Carpenter Bench", "desc": "Processes raw logs into planks and rods." },
+            "grinder": { "name": "Grinder", "desc": "Used to grind grains and soft ores." },
+            "wheat": { "name": "Wheat", "desc": "Basic grain for flour production." },
+            "wheat_seed": { "name": "Wheat Seed", "desc": "Seed for planting wheat." },
+            "water_bucket": { "name": "Water Bucket", "desc": "Container with fresh water." },
+            "preferment": { "name": "Pre-Ferment", "desc": "Base for yeast activation." },
+            "salt": { "name": "Sea Salt", "desc": "Essential mineral for flavor and preservation." },
+            "bread_dough": { "name": "Bread Dough", "desc": "Dough ready to be baked." },
+            "fermentation_table": { "name": "Fermentation Table", "desc": "Equipment for processing biological cultures." },
+            "workbench": { "name": "Work Bench", "desc": "Multifunctional table for assembling complex items." }
+          },
+          "stats": {
+            "regen": "VITALITY",
+            "hunger": "SATIETY",
+            "energy": "ENERGY"
+          }
         },
         "progression_hub": {
           "title": "Systemic Evolution",
@@ -469,6 +572,25 @@ const resources = {
           "limit": "Limit: 4 Players Solo/Coop",
           "manager_title": "Sentinel Manager",
           "manager_desc": "Persistent synchronization of progress and genetics across sessions."
+        },
+        "production": {
+          "title": "Production Flowcharts",
+          "desc": "Technical mapping of large-scale matter transformation cycles.",
+          "technical_cycle": "Food Engineering (Critical Cycle)",
+          "machines": {
+            "soil": "Fertile Soil",
+            "furnace": "Furnace",
+            "manual": "Manual Handling"
+          },
+          "steps": {
+            "agro_label": "Agricultural Cycle",
+            "milling_label": "Industrial Processing",
+            "extraction_label": "Mineral Extraction",
+            "activation_label": "Biological Activation",
+            "culture_label": "Yeast Culture",
+            "synthesis_label": "Dough Synthesis",
+            "thermal_label": "Final Thermal Stage"
+          }
         },
         "dev_diary": {
           "title": "Dev Diary",

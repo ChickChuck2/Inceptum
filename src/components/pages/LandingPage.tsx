@@ -2,12 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, useInView } from 'framer-motion';
 import {
-   Play, MessageCircle, ChevronDown, Axe, Wheat, Users,
-   Fish, Hammer, Flame, Sword, Dna, ShoppingCart, Wrench,
-   Cpu, Bug, Leaf, Monitor, HardDrive, MemoryStick,
-   ChevronRight
- } from 'lucide-react';
- import gameplayMain from '../../assets/images/gameplay_main.png';
+  Play, MessageCircle, ChevronDown, Axe, Wheat, Users,
+  Fish, Hammer, Flame, Sword, Dna, ShoppingCart, Wrench,
+  Cpu, Bug, Leaf, Monitor, HardDrive, MemoryStick,
+  ChevronRight
+} from 'lucide-react';
+import gameplayMain from '../../assets/images/gameplay_alt.png';
 
 // --- Animated Counter ---
 const StatCounter: React.FC<{ end: number; label: string; suffix?: string }> = ({ end, label, suffix = '' }) => {
@@ -323,23 +323,12 @@ const LandingPage: React.FC = () => {
 
           <div className="mechanics-right">
             <div className="gameplay-mockup">
-              <div className="mockup-hud-bar">
-                <span className="hud-bar-item">❤ 100</span>
-                <span className="hud-bar-item">🍖 82%</span>
-                <span className="hud-bar-item">⚡ 71%</span>
-              </div>
               <img src={gameplayMain} alt="Gameplay" className="mockup-img" />
-              <div className="mockup-overlay">
-                <div className="mockup-item-slot active">🪓</div>
-                <div className="mockup-item-slot">⛏</div>
-                <div className="mockup-item-slot">🏹</div>
-                <div className="mockup-item-slot">🔥</div>
-                <div className="mockup-item-slot">🎣</div>
-              </div>
-              <div className="mockup-caption">
-                <span>BIOMA_FLORESTA · SEED_7429</span>
-                <span className="mockup-online">● {t('landing.mechanics.online')}</span>
-              </div>
+              <div className="hud-corner hud-tl" />
+              <div className="hud-corner hud-tr" />
+              <div className="hud-corner hud-bl" />
+              <div className="hud-corner hud-br" />
+              <div className="mockup-scanline" />
             </div>
           </div>
         </div>

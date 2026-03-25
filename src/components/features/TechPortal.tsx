@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import WorldPreviewer from './WorldPreviewer';
 import Wiki from '../pages/Wiki';
+import ProductionChain from './ProductionChain';
 import Workshop from './Workshop';
 import BuilderAtelier from './BuilderAtelier';
 import ProgressionHub from './ProgressionHub';
@@ -25,6 +26,10 @@ const TechPortal: React.FC = () => {
       </section>
 
       <Wiki />
+      
+      <section className="production-hub">
+        <ProductionChain />
+      </section>
       
       <section className="workshop-section">
         <Workshop />

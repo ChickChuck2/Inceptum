@@ -82,7 +82,7 @@ const Wiki: React.FC = () => {
               <div className="card-header">
                 {item.image ? (
                   <div className="icon-box">
-                    <img src={item.image} alt={item.name} className="game-sprite" />
+                    <img src={item.image} alt={t(`landing.wiki.items.${item.id}.name`)} className="game-sprite" />
                   </div>
                 ) : (
                   <div className="icon-box">
@@ -92,21 +92,29 @@ const Wiki: React.FC = () => {
                     {item.type === 'Machine' && <Settings size={24} color="#00d2ff" />}
                   </div>
                 )}
-                <h3>{item.name}</h3>
+                <h3>{t(`landing.wiki.items.${item.id}.name`)}</h3>
               </div>
               
               <div className="card-body">
-                <p className="item-description">{item.description}</p>
+                <p className="item-description">{t(`landing.wiki.items.${item.id}.desc`)}</p>
                 
                 {item.stats && (
                   <div className="item-stats-hud">
                     {item.stats.regen !== undefined && item.stats.regen !== 0 && (
                       <div className={`stat-pill ${item.stats.regen > 0 ? 'pos' : 'neg'}`}>
-                        VITA: {item.stats.regen > 0 ? '+' : ''}{item.stats.regen}
+                        {t('landing.wiki.stats.regen')}: {item.stats.regen > 0 ? '+' : ''}{item.stats.regen}
                       </div>
                     )}
-                    {item.stats.hunger && <div className="stat-pill">SALAR: +{item.stats.hunger}s</div>}
-                    {item.stats.energy && <div className="stat-pill">NRG: +{item.stats.energy}</div>}
+                    {item.stats.hunger && (
+                      <div className="stat-pill">
+                        {t('landing.wiki.stats.hunger')}: +{item.stats.hunger}s
+                      </div>
+                    )}
+                    {item.stats.energy && (
+                      <div className="stat-pill">
+                        {t('landing.wiki.stats.energy')}: +{item.stats.energy}
+                      </div>
+                    )}
                   </div>
                 )}
 
