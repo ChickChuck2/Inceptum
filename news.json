@@ -28,7 +28,15 @@
         },
         {
           "type": "bug",
-          "text": "Corrigida detecção de colisão para árvores frutíferas e grama no SP."
+          "text": "Estabilização do Building System: O mouse agora detecta corretamente itens e slots, prevenindo construções acidentais."
+        },
+        {
+          "type": "imp",
+          "text": "Supressão Dinâmica de Build: O preview agora se oculta automaticamente ao sobrepor a Hotbar ou Itens, reativando ao sair."
+        },
+        {
+          "type": "bug",
+          "text": "Resolvido vazamento de estado no Moedor que podia bloquear permanentemente o sistema de construção."
         },
         {
           "type": "imp",

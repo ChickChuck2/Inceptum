@@ -31,3 +31,7 @@ dito isso, pode começar a modificar o news.json
 > O valor exato encontrado lá (ex: `0.1`) DEVE ser usado no `news.json` e no site. 
 > NUNCA tente inventar sub-versões (como `0.1.4`) se elas não existirem no arquivo do Unity.
 > Versão do Site e Versão do Jogo são entidades distintas, mas o `news.json` deve refletir a **REALIDADE do JOGO**.
+
+> Após a implementação, já coloque no ar!
+> Faça uma verificação extra sempre;
+1° Verificação de tradução / textos no website
