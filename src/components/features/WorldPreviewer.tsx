@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { NoiseEngine } from '../utils/NoiseEngine';
+import { NoiseEngine } from '../../utils/NoiseEngine';
 import { motion } from 'framer-motion';
 
 const WorldPreviewer: React.FC = () => {

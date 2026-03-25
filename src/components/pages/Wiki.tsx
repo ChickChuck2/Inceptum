@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ItemDatabase } from '../utils/ItemDatabase';
+import { ItemDatabase } from '../../data/ItemDatabase';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Hammer, Settings, Search, Package } from 'lucide-react';

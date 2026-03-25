@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import LandingPage from './components/LandingPage';
-import TechPortal from './components/TechPortal';
+import LandingPage from './components/pages/LandingPage';
+import TechPortal from './components/features/TechPortal';
 import { Terminal, Globe } from 'lucide-react';
-import './index.css';
-import './wiki.css';
-import './portal.css';
-import './premium.css';
+import './styles/global.css';
+import './styles/wiki.css';
+import './styles/portal.css';
+import './styles/premium.css';
 
 const App: React.FC = () => {
   const { t, i18n } = useTranslation();

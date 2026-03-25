@@ -2,11 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, useInView } from 'framer-motion';
 import {
-  Play, MessageCircle, ChevronDown, Axe, Wheat, Users,
-  Fish, Hammer, Flame, Sword, Dna, ShoppingCart, Wrench,
-  Cpu, Bug, Leaf, Monitor, HardDrive, MemoryStick,
-  ChevronRight
-} from 'lucide-react';
+   Play, MessageCircle, ChevronDown, Axe, Wheat, Users,
+   Fish, Hammer, Flame, Sword, Dna, ShoppingCart, Wrench,
+   Cpu, Bug, Leaf, Monitor, HardDrive, MemoryStick,
+   ChevronRight
+ } from 'lucide-react';
+ import gameplayMain from '../../assets/images/gameplay_main.png';
 
 // --- Animated Counter ---
 const StatCounter: React.FC<{ end: number; label: string; suffix?: string }> = ({ end, label, suffix = '' }) => {
@@ -327,7 +328,7 @@ const LandingPage: React.FC = () => {
                 <span className="hud-bar-item">🍖 82%</span>
                 <span className="hud-bar-item">⚡ 71%</span>
               </div>
-              <img src="assets/gameplay_forest.png" alt="Gameplay" className="mockup-img" />
+              <img src={gameplayMain} alt="Gameplay" className="mockup-img" />
               <div className="mockup-overlay">
                 <div className="mockup-item-slot active">🪓</div>
                 <div className="mockup-item-slot">⛏</div>

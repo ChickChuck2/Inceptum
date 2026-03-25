@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import WorldPreviewer from './WorldPreviewer';
-import Wiki from './Wiki';
+import Wiki from '../pages/Wiki';
 import Workshop from './Workshop';
 import BuilderAtelier from './BuilderAtelier';
 import ProgressionHub from './ProgressionHub';
