@@ -1,6 +1,41 @@
 {
-  "last_check": "2026-03-25",
+  "last_check": "2026-03-27",
   "updates": [
+    {
+      "date": "27 MAR",
+      "version": "APLHA 0.1",
+      "title": "MODERNIZAÇÃO E PERSISTÊNCIA NO ONEDRIVE",
+      "notes": [
+        {
+          "type": "feature",
+          "text": "Migração Vanguard (Fermentação): Nova interface via UI Toolkit com foco visual no produto final e rolagem de receitas."
+        },
+        {
+          "type": "imp",
+          "text": "Sincronização OneDrive: Saves agora são direcionados para 'My Games/CywoodsDev/Inceptum' com criação automática de pastas."
+        },
+        {
+          "type": "bug",
+          "text": "Correção de Identidade: Blocos de pedregulho e pedra agora mantêm seu material correto ao serem colocados no chão."
+        },
+        {
+          "type": "bug",
+          "text": "Persistência de Vida: Blocos agora preservam a vida atual (HP) após o carregamento, respeitando os novos multiplicadores de Tier."
+        },
+        {
+          "type": "bug",
+          "text": "Estabilidade de Save: Corrigido o bloqueio de salvamento no Singleplayer; Host e Jogador Local agora salvam no OneDrive de forma confiável."
+        },
+        {
+          "type": "feature",
+          "text": "Múltiplos Slots: Restauração completa do suporte a 3 slots de salvamento independentes integrados ao OneDrive."
+        },
+        {
+          "type": "bug",
+          "text": "Correção Visual: Resolvida distorção de ícones na Fermentação e bug que destruía o Canvas ao fechar a interface."
+        }
+      ]
+    },
     {
       "date": "25 MAR",
       "version": "APLHA 0.1",
