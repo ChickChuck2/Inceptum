@@ -35,3 +35,9 @@ dito isso, pode começar a modificar o news.json
 > Após a implementação, já coloque no ar!
 > Faça uma verificação extra sempre;
 1° Verificação de tradução / textos no website
+
+
+Apos a implementação e adição prossiga para lançamento do website utilizando o comando:
+
+> [!IMPORTANT]
+npm run deploy

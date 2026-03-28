@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-03-27",
+  "last_check": "2026-03-28",
   "updates": [
+    {
+      "date": "28 MAR",
+      "version": "APLHA 0.1",
+      "title": "REVOLUÇÃO NA FORJA E MULTI-TASKING",
+      "notes": [
+        {
+          "type": "feature",
+          "text": "Multi-Tasking na Forja: Agora a Forja suporta fundição e moldagem simultâneas! Funda metais no fundo enquanto bate o martelo na aba de moldagem."
+        },
+        {
+          "type": "feature",
+          "text": "Trava de Segurança (Safety Lock): Bloqueio automático de saída (ESC/Fechar) durante o trabalho manual de moldagem para evitar perda de progresso."
+        },
+        {
+          "type": "imp",
+          "text": "Identidade Visual Unificada: Todas as máquinas (Forja, Carpintaria, Fermentação e Mesa de Trabalho) agora exibem títulos padronizados no topo (Vanguard Design)."
+        },
+        {
+          "type": "bug",
+          "text": "Carpintaria: Corrigido alinhamento do serrote; barra de progresso agora preenche a silhueta perfeitamente. Nomes movidos para o topo dos cards."
+        },
+        {
+          "type": "bug",
+          "text": "Estabilidade: Resolvido NullReferenceException ao abrir a Forja e melhorada a sincronização de dados Singleplayer/Multiplayer."
+        }
+      ]
+    },
     {
       "date": "27 MAR",
       "version": "APLHA 0.1",
