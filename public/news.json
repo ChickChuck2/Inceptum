@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-03-28",
+  "last_check": "2026-03-29",
   "updates": [
+    {
+      "date": "29 MAR",
+      "version": "APLHA 0.1",
+      "title": "PERSISTÊNCIA TOTAL E ESTABILIDADE",
+      "notes": [
+        {
+          "type": "feature",
+          "text": "Persistência de Máquinas: Fornalhas, Fermentação e Forjas agora salvam progresso, combustíveis e temperaturas."
+        },
+        {
+          "type": "feature",
+          "text": "Sistema de Agricultura: Plantações agora são persistentes e continuam crescendo após o carregamento."
+        },
+        {
+          "type": "imp",
+          "text": "Backward Compatibility: Implementada camada de proteção [OptionalField] para evitar corrupção de saves antigos."
+        },
+        {
+          "type": "bug",
+          "text": "Multiplayer Building: Corrigido bug que resetava o Tier de blocos avançados ao serem colocados por clientes."
+        },
+        {
+          "type": "bug",
+          "text": "Estabilidade de UI: Resolvidos NullReferenceExceptions no EventSystem e BuildingSystem durante o carregamento de mundos."
+        }
+      ]
+    },
     {
       "date": "28 MAR",
       "version": "APLHA 0.1",
