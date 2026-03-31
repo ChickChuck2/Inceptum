@@ -8,19 +8,19 @@
       "notes": [
         {
           "type": "perf",
-          "text": "Object Pooling (Desempenho): Implementado sistema de reciclagem de recursos (Árvores, Pedras e Animais). Redução de até 80% no carregamento de CPU durante a exploração infinita."
+          "text": "Otimização de Núcleo (Structural Fix): Atacamos o 'miolo' do jogo! Agora a geração de mundo é 100% assíncrona e fatiada por frames, eliminando stutters estruturais ao cruzar biomas ou carregar saves."
         },
         {
           "type": "perf",
-          "text": "Zero-Allocation Engine: Refatoração total dos loops de geração de mundo para eliminar alocações de memória (GC.Alloc), removendo completamente os micro-travamentos (stutters)."
+          "text": "Amortização de Física (Phase 2): Implementado o PhysicsManager para gerenciar AutoSync. Chega de rebuilds de colisão a cada objeto; agora o mundo sincroniza de forma inteligente em blocos."
         },
         {
           "type": "perf",
-          "text": "Processamento Fatiado (Time-Slicing): A ativação de objetos distantes agora é distribuída entre frames, estabilizando o frame-rate mesmo em áreas com densidade extrema de recursos."
+          "text": "Orçamento de Ativação (Activation Budget): Objetos agora respeitam um limite de ativação por frame. Mesmo em áreas densas, o FPS não cai mais bruscamente ao olhar para o lado."
         },
         {
           "type": "perf",
-          "text": "Throttling de Sistemas: Lógicas de IA animal e sombras do ciclo dia/noite agora processam em intervalos inteligentes (20Hz), otimizando o uso de CPU sem perda de fidelidade visual."
+          "text": "Script Throttling (Blocks & IA): Otimizado o Update de centenas de construções e IA animal, movendo checagens redundantes para um sistema de 'Lazy Ticks' de 0.5s."
         },
         {
           "type": "imp",
