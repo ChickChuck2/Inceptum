@@ -29,6 +29,18 @@
         {
           "type": "bug",
           "text": "Estabilidade de UI: Fix de NullReferenceException no sistema de arrasto de inventário ao fechar menus com itens em movimento."
+        },
+        {
+          "type": "feature",
+          "text": "Vagalumes Realistas: Corrigido o sistema de iluminação dos vagalumes; agora eles respeitam o ciclo Dia/Noite (visíveis apenas à noite) com efeito de flash aprimorado."
+        },
+        {
+          "type": "imp",
+          "text": "Preview de Mapa (Shader): O preview no menu foi refatorado para renderização via Mesh e Shader, garantindo paridade visual absoluta com o terreno do jogo (transições suaves de bioma)."
+        },
+        {
+          "type": "imp",
+          "text": "Otimização de UI: Removida lógica legada de instanciação de blocos quadrados, tornando a navegação no menu mais fluida e moderna."
         }
       ]
     },
