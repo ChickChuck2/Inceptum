@@ -7,6 +7,10 @@
       "title": "PERSISTÊNCIA INFINITA E REFINAMENTO VISUAL",
       "notes": [
         {
+          "type": "imp",
+          "text": "Spawn Suave: A distância de renderização foi ampliada e agora os recursos surgem através de uma animação suave (Smooth Scale), eliminando o 'popping' visual e tornando a exploração mais imersiva."
+        },
+        {
           "type": "feature",
           "text": "Persistência Procedural: O mundo agora memoriza cada árvore derrubada, pedra minerada e animal morto, impedindo respawns indesejados em áreas já exploradas (Área Explorada é Área Extraída)."
         },
