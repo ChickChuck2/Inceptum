@@ -1,6 +1,33 @@
 {
-  "last_check": "2026-03-29",
+  "last_check": "2026-03-31",
   "updates": [
+    {
+      "date": "31 MAR",
+      "version": "APLHA 0.1",
+      "title": "PERSISTÊNCIA INFINITA E REFINAMENTO VISUAL",
+      "notes": [
+        {
+          "type": "feature",
+          "text": "Persistência Procedural: O mundo agora memoriza cada árvore derrubada, pedra minerada e animal morto, impedindo respawns indesejados em áreas já exploradas (Área Explorada é Área Extraída)."
+        },
+        {
+          "type": "feature",
+          "text": "Refino Visual (Forja/Fornalha): As interfaces de fundição foram completamente reconstruídas para suporte responsivo e alinhamento Vanguard Premium, eliminando layouts espremidos."
+        },
+        {
+          "type": "bug",
+          "text": "Blocos de Construção: Corrigido o reset de HP para 100 ao carregar mundos com estruturas de Tiers elevados (Lvl 2+); a vida salva agora é respeitada fielmente."
+        },
+        {
+          "type": "bug",
+          "text": "Despawn Multiplayer: Resolvido o problema de desaparecimento instantâneo de animais e chunks no servidor ao considerar a distância de todos os jogadores conectados."
+        },
+        {
+          "type": "bug",
+          "text": "Estabilidade de UI: Fix de NullReferenceException no sistema de arrasto de inventário ao fechar menus com itens em movimento."
+        }
+      ]
+    },
     {
       "date": "29 MAR",
       "version": "APLHA 0.1",
