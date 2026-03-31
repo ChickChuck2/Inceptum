@@ -1,6 +1,85 @@
 {
-  "last_check": "2026-03-29",
+  "last_check": "2026-03-31",
   "updates": [
+    {
+      "date": "31 MAR",
+      "version": "APLHA 0.1",
+      "title": "PERSISTÊNCIA INFINITA E REFINAMENTO VISUAL",
+      "notes": [
+        {
+          "type": "perf",
+          "text": "Otimização de Núcleo (Structural Fix): Atacamos o 'miolo' do jogo! Agora a geração de mundo é 100% assíncrona e fatiada por frames, eliminando stutters estruturais ao cruzar biomas ou carregar saves."
+        },
+        {
+          "type": "perf",
+          "text": "Amortização de Física (Phase 2): Implementado o PhysicsManager para gerenciar AutoSync. Chega de rebuilds de colisão a cada objeto; agora o mundo sincroniza de forma inteligente em blocos."
+        },
+        {
+          "type": "perf",
+          "text": "Orçamento de Ativação (Activation Budget): Objetos agora respeitam um limite de ativação por frame. Mesmo em áreas densas, o FPS não cai mais bruscamente ao olhar para o lado."
+        },
+        {
+          "type": "perf",
+          "text": "Script Throttling (Blocks & IA): Otimizado o Update de centenas de construções e IA animal, movendo checagens redundantes para um sistema de 'Lazy Ticks' de 0.5s."
+        },
+        {
+          "type": "imp",
+          "text": "Spawn Suave: A distância de renderização foi ampliada e agora os recursos surgem através de uma animação suave (Smooth Scale), eliminando o 'popping' visual e tornando a exploração mais imersiva."
+        },
+        {
+          "type": "feature",
+          "text": "Persistência Procedural: O mundo agora memoriza cada árvore derrubada, pedra minerada e animal morto, impedindo respawns indesejados em áreas já exploradas (Área Explorada é Área Extraída)."
+        },
+        {
+          "type": "feature",
+          "text": "Refino Visual (Forja/Fornalha): As interfaces de fundição foram completamente reconstruídas para suporte responsivo e alinhamento Vanguard Premium, eliminando layouts espremidos."
+        },
+        {
+          "type": "bug",
+          "text": "Blocos de Construção: Corrigido o reset de HP para 100 ao carregar mundos com estruturas de Tiers elevados (Lvl 2+); a vida salva agora é respeitada fielmente."
+        },
+        {
+          "type": "bug",
+          "text": "Despawn Multiplayer: Resolvido o problema de desaparecimento instantâneo de animais e chunks no servidor ao considerar a distância de todos os jogadores conectados."
+        },
+        {
+          "type": "bug",
+          "text": "Estabilidade de UI: Fix de NullReferenceException no sistema de arrasto de inventário ao fechar menus com itens em movimento."
+        },
+        {
+          "type": "feature",
+          "text": "Vagalumes Realistas: Corrigido o sistema de iluminação dos vagalumes; agora eles respeitam o ciclo Dia/Noite (visíveis apenas à noite) com efeito de flash aprimorado."
+        },
+        {
+          "type": "imp",
+          "text": "Preview de Mapa (Shader): O preview no menu foi refatorado para renderização via Mesh e Shader, garantindo paridade visual absoluta com o terreno do jogo (transições suaves de bioma)."
+        },
+        {
+          "type": "perf",
+          "text": "Física Deferida (Phase 3): Erradicação de picos de 'CompositeCollider' durante o carregamento de saves via PhysicsManager. O mundo agora carrega centenas de blocos sem travar o motor de física."
+        },
+        {
+          "type": "perf",
+          "text": "Otimização de Itens (Mil Cortes): Removido o overhead de centenas de itens no chão; a lógica de coleta agora é processada sob demanda, economizando CPU fixa."
+        },
+        {
+          "type": "perf",
+          "text": "Inteligência Artificial Fatiada: A IA animal agora utiliza 'Time-Slicing' (5 frames), mantendo a responsividade mas reduzindo drasticamente o custo de processamento em áreas densas."
+        },
+        {
+          "type": "perf",
+          "text": "Queries NonAlloc: Refatorado o sistema de spawn de recursos para usar queries físicas que não geram lixo (GC), eliminando micro-engasgos durante a exploração."
+        },
+        {
+          "type": "feature",
+          "text": "Sincronização Vertical (Vsync): Adicionada opção de Vsync no menu de vídeo para eliminar o 'screen tearing' e estabilizar a fluidez visual."
+        },
+        {
+          "type": "imp",
+          "text": "Otimização de UI: Removida lógica legada de instanciação de blocos quadrados, tornando a navegação no menu mais fluida e moderna."
+        }
+      ]
+    },
     {
       "date": "29 MAR",
       "version": "APLHA 0.1",
