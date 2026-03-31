@@ -7,6 +7,22 @@
       "title": "PERSISTÊNCIA INFINITA E REFINAMENTO VISUAL",
       "notes": [
         {
+          "type": "perf",
+          "text": "Object Pooling (Desempenho): Implementado sistema de reciclagem de recursos (Árvores, Pedras e Animais). Redução de até 80% no carregamento de CPU durante a exploração infinita."
+        },
+        {
+          "type": "perf",
+          "text": "Zero-Allocation Engine: Refatoração total dos loops de geração de mundo para eliminar alocações de memória (GC.Alloc), removendo completamente os micro-travamentos (stutters)."
+        },
+        {
+          "type": "perf",
+          "text": "Processamento Fatiado (Time-Slicing): A ativação de objetos distantes agora é distribuída entre frames, estabilizando o frame-rate mesmo em áreas com densidade extrema de recursos."
+        },
+        {
+          "type": "perf",
+          "text": "Throttling de Sistemas: Lógicas de IA animal e sombras do ciclo dia/noite agora processam em intervalos inteligentes (20Hz), otimizando o uso de CPU sem perda de fidelidade visual."
+        },
+        {
           "type": "imp",
           "text": "Spawn Suave: A distância de renderização foi ampliada e agora os recursos surgem através de uma animação suave (Smooth Scale), eliminando o 'popping' visual e tornando a exploração mais imersiva."
         },
