@@ -502,20 +502,20 @@ const LandingPage: React.FC = () => {
             <motion.div className="sysreq-card" initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <div className="sysreq-label">{t('landing.sysreq.min')}</div>
               <div className="sysreq-rows">
-                <div className="sysreq-row"><Cpu size={14} /><span>CPU</span><b>Intel Core i3 ou equivalente</b></div>
-                <div className="sysreq-row"><Monitor size={14} /><span>GPU</span><b>Intel UHD 620 integrada</b></div>
-                <div className="sysreq-row"><MemoryStick size={14} /><span>RAM</span><b>8 GB</b></div>
-                <div className="sysreq-row"><HardDrive size={14} /><span>HDD</span><b>5–10 GB livres</b></div>
+                <div className="sysreq-row"><Cpu size={14} /><span>CPU</span><b>i3 2ª Geração / AMD Equiv.</b></div>
+                <div className="sysreq-row"><Monitor size={14} /><span>GPU</span><b>Integrada / Dedicada DX11</b></div>
+                <div className="sysreq-row"><MemoryStick size={14} /><span>RAM</span><b>4 GB</b></div>
+                <div className="sysreq-row"><HardDrive size={14} /><span>HDD</span><b>SSD Recomendado</b></div>
                 <div className="sysreq-row"><Monitor size={14} /><span>SO</span><b>Windows 10 64-bit</b></div>
               </div>
             </motion.div>
             <motion.div className="sysreq-card recommended" initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <div className="sysreq-label recommended-label">{t('landing.sysreq.rec')}</div>
               <div className="sysreq-rows">
-                <div className="sysreq-row"><Cpu size={14} /><span>CPU</span><b>Intel Core i5/i7 10ª geração</b></div>
-                <div className="sysreq-row"><Monitor size={14} /><span>GPU</span><b>NVIDIA GT 730 / RX 550</b></div>
-                <div className="sysreq-row"><MemoryStick size={14} /><span>RAM</span><b>16 GB</b></div>
-                <div className="sysreq-row"><HardDrive size={14} /><span>HDD</span><b>15–20 GB livres</b></div>
+                <div className="sysreq-row"><Cpu size={14} /><span>CPU</span><b>i5 4ª Geração / Ryzen 3 1200+</b></div>
+                <div className="sysreq-row"><Monitor size={14} /><span>GPU</span><b>GTX 750 Ti / 950 / 1050+</b></div>
+                <div className="sysreq-row"><MemoryStick size={14} /><span>RAM</span><b>8 GB</b></div>
+                <div className="sysreq-row"><HardDrive size={14} /><span>HDD</span><b>SSD (Foco 1080p/60 FPS)</b></div>
                 <div className="sysreq-row"><Monitor size={14} /><span>SO</span><b>Windows 11 64-bit</b></div>
               </div>
             </motion.div>
