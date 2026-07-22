@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chickchuck2.github.io/Inceptum/sitemap.xml
