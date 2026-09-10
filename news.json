@@ -1,6 +1,77 @@
 {
-  "last_check": "2026-03-31",
+  "last_check": "2026-09-09",
   "updates": [
+    {
+      "date": "09 SET",
+      "version": "APLHA 0.1",
+      "title": "MULTIPLAYER EXPANSIVO, COMBATE DUPLO E POLIMENTO GERAL",
+      "notes": [
+        {
+          "type": "feature",
+          "text": "Combate Desarmado & Combo Duplo: Sistema de socos reformulado com suporte a golpes independentes por mão (Botão Esquerdo = mão esquerda, Botão Direito = mão direita, e combo contínuo alternado ao segurar ambos os botões)."
+        },
+        {
+          "type": "feature",
+          "text": "Ataque Contínuo em Loop: Manter o botão do mouse pressionado agora desfere socos em sequência orgânica sem interrupção por cliques repetidos ou quebra de cadência."
+        },
+        {
+          "type": "feature",
+          "text": "Modo Criativo Oficial: Removida a concessão forçada de 99 itens em modo desenvolvedor ao conectar; adicionada opção dedicada de 'Modo Criativo' configurável na tela de criação de novos mundos."
+        },
+        {
+          "type": "feature",
+          "text": "Minimapa Centralizado Local: O minimapa agora foca 100% no jogador local em cada tela (seja Host ou Cliente), fixando o ponto vermelho no centro e exibindo companheiros em ciano."
+        },
+        {
+          "type": "feature",
+          "text": "Carregamento Completo do Host: Tela de carregamento oficial ao hospedar mundos, permanecendo ativa até a recarga e sincronização total de todos os chunks, construções e recursos procedurais."
+        },
+        {
+          "type": "imp",
+          "text": "Pesca Aprimorada (SP & MP): Vara de pesca totalmente funcional para Host e Clientes; o peixe fisgado agora é arremessado suavemente ao chão com física e indicador de interação [E] (Pickup) para coleta manual."
+        },
+        {
+          "type": "imp",
+          "text": "Renderização Distribuída de Recursos: Chunks, recursos procedurais e fauna agora utilizam renderização dinâmica centrada em todos os jogadores conectados, eliminando desequilíbrios entre Host e Clientes."
+        },
+        {
+          "type": "imp",
+          "text": "Menu Radial e Construção: Calibrada a seleção e posicionamento de blocos e estruturas através do menu radial tanto no Singleplayer quanto no Multiplayer."
+        },
+        {
+          "type": "bug",
+          "text": "Pesca (Tag Water): Corrigido o erro crítico 'Tag: Water is not defined' na boia (Bobber), com suporte seguro para pesca em água de terreno procedural e blocos de água colocados."
+        },
+        {
+          "type": "bug",
+          "text": "Crafting do Cliente: Corrigido o bug onde itens presentes no inventário de clientes conectados eram contabilizados como ZERO no sistema de criação de receitas."
+        },
+        {
+          "type": "bug",
+          "text": "Fermentação no Multiplayer: Clientes conectados agora conseguem abrir a bancada de fermentação, visualizar processos e depositar ingredientes normalmente."
+        },
+        {
+          "type": "bug",
+          "text": "Persistência da Fermentação: Resolvido o reset de dados ao sair do jogo; barris, tempos de maturação e receitas em andamento agora são salvos e restaurados fielmente."
+        },
+        {
+          "type": "bug",
+          "text": "Agricultura & Plantações MP: Sincronização completa de estágios de crescimento, colheita e interação com plantas para todos os jogadores na sessão multiplayer."
+        },
+        {
+          "type": "bug",
+          "text": "Dano e Quebra de Blocos MP: Clientes agora transmitem dano estrutural corretamente ao servidor, permitindo quebra e colheita de blocos sincronizadas."
+        },
+        {
+          "type": "bug",
+          "text": "Recursos Invisíveis no Cliente: Erradicado o bug que tornava recursos do mapa invisíveis ou sem colisão para o cliente após conexões subsequentes."
+        },
+        {
+          "type": "bug",
+          "text": "Animações de Ataque em Rede: Sincronização via RPC das animações de soco e interrupções, garantindo que o movimento dos braços seja visualizado corretamente por outros jogadores."
+        }
+      ]
+    },
     {
       "date": "31 MAR",
       "version": "APLHA 0.1",
