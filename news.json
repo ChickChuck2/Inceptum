@@ -7,16 +7,16 @@
       "title": "MÁQUINA DE MOER MANUAL, RESPAWN MULTIPLAYER & COMANDO /KILL",
       "notes": [
         {
-          "type": "feature",
-          "text": "Máquina de Moer Orgânica & Drag & Drop: Suporte para arrastar itens (trigo, carne) diretamente do inventário sobre o Moedor no mundo; sistema de processamento com manivela manual por aproximação [F], consumindo estamina por giro com contador visual na tela."
+          "type": "bug",
+          "text": "Máquina de Moer Orgânica & Drag & Drop: Corrigido o funcionamento do moedor; suporte para arrastar itens (trigo, carne) diretamente do inventário sobre o Moedor no mundo; sistema de processamento com manivela manual por aproximação [F], consumindo estamina por giro com contador visual na tela."
         },
         {
           "type": "feature",
           "text": "Comando de Chat /kill: Introduzido o comando de console '/kill player' (ou '/kill <id>') no chat para suicídio/execução controlada, agilizando testes de gameplay e cenários de emergência."
         },
         {
-          "type": "imp",
-          "text": "Ciclo de Morte & Respawn em Rede (SP & MP): Eliminação do despawn destrutivo de jogadores pelo Netcode; o estado de morte agora suspende visuais e física sem destruir o objeto, permitindo renascimento instantâneo e sincronizado via servidor através do botão 'Renascer'."
+          "type": "bug",
+          "text": "Respawn e Morte no Multiplayer (Bug Fix): Corrigido o bug crítico onde jogadores não conseguiam renascer no multiplayer; eliminação do despawn destrutivo pelo Netcode, permitindo renascimento instantâneo e sincronizado via servidor através do botão 'Renascer'."
         },
         {
           "type": "imp",
